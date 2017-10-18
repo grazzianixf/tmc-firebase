@@ -18,11 +18,11 @@ function create(name, age) {
     return firebase.database().ref().child('users').push(data);
 }
 
-firebase.database().ref('users').on('value', function (snapshot) {
+firebase.database().ref('patches').on('value', function (snapshot) {
     usersList.innerHTML = '';
     snapshot.forEach(function (item) {
         var li = document.createElement('li');
-        li.appendChild(document.createTextNode(item.val().name + ': ' + item.val().age));
+        li.appendChild(document.createTextNode(item.val().descricao));
         usersList.appendChild(li);
     });
 });

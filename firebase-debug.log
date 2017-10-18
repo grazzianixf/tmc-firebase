@@ -1,0 +1,81 @@
+[debug] [2017-10-18T20:05:10.421Z] ----------------------------------------------------------------------
+[debug] [2017-10-18T20:05:10.424Z] Command:       /usr/bin/node /home/grazziani/.npm-global/bin/firebase login
+[debug] [2017-10-18T20:05:10.424Z] CLI Version:   3.13.1
+[debug] [2017-10-18T20:05:10.424Z] Platform:      linux
+[debug] [2017-10-18T20:05:10.424Z] Node Version:  v6.11.4
+[debug] [2017-10-18T20:05:10.424Z] Time:          Wed Oct 18 2017 17:05:10 GMT-0300 (BRT)
+[debug] [2017-10-18T20:05:10.424Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on any device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=203758794&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2017-10-18T20:05:26.273Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token { code: '4/fghQnm0jdscKvnA2bLXPe_3POvKg2s-6DdmUxSLJtYc',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  redirect_uri: 'http://localhost:9005',
+  grant_type: 'authorization_code' } 
+ Wed Oct 18 2017 17:05:26 GMT-0300 (BRT)
+[debug] [2017-10-18T20:06:48.722Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token { code: '4/fACar6kDeFbZ_yoffjS22x2Z3bxkBy8vN0nDyTrxOsU',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  redirect_uri: 'http://localhost:9005',
+  grant_type: 'authorization_code' } 
+ Wed Oct 18 2017 17:06:48 GMT-0300 (BRT)
+[debug] [2017-10-18T20:08:41.805Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token { code: '4/-xG_m-NNY87OHo0oH3ogWjIiUKjlQMIMmXJ6-Lq4gys',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  redirect_uri: 'http://localhost:9005',
+  grant_type: 'authorization_code' } 
+ Wed Oct 18 2017 17:08:41 GMT-0300 (BRT)
+[debug] [2017-10-18T20:12:08.782Z] ----------------------------------------------------------------------
+[debug] [2017-10-18T20:12:08.785Z] Command:       /usr/bin/node /home/grazziani/.npm-global/bin/firebase login
+[debug] [2017-10-18T20:12:08.785Z] CLI Version:   3.13.1
+[debug] [2017-10-18T20:12:08.785Z] Platform:      linux
+[debug] [2017-10-18T20:12:08.785Z] Node Version:  v6.11.4
+[debug] [2017-10-18T20:12:08.785Z] Time:          Wed Oct 18 2017 17:12:08 GMT-0300 (BRT)
+[debug] [2017-10-18T20:12:08.785Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on any device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=798395915&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2017-10-18T20:12:21.685Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token { code: '4/h7xNj8ZPU243ZTsCJcFJdDvJB5wka3NAI3kU4QoKhWM',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  redirect_uri: 'http://localhost:9005',
+  grant_type: 'authorization_code' } 
+ Wed Oct 18 2017 17:12:21 GMT-0300 (BRT)
+[debug] [2017-10-18T20:13:01.090Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token { code: '4/-nZ_uZBQ9rU3oi5IL2mQs0ntqTFNw9_mkciEUDpsO3o',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  redirect_uri: 'http://localhost:9005',
+  grant_type: 'authorization_code' } 
+ Wed Oct 18 2017 17:13:01 GMT-0300 (BRT)
+[debug] [2017-10-18T20:15:01.140Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token { code: '4/-nZ_uZBQ9rU3oi5IL2mQs0ntqTFNw9_mkciEUDpsO3o',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  redirect_uri: 'http://localhost:9005',
+  grant_type: 'authorization_code' } 
+ Wed Oct 18 2017 17:15:01 GMT-0300 (BRT)
+[debug] [2017-10-18T20:32:50.433Z] ----------------------------------------------------------------------
+[debug] [2017-10-18T20:32:50.435Z] Command:       /usr/bin/node /home/grazziani/.npm-global/bin/firebase login
+[debug] [2017-10-18T20:32:50.435Z] CLI Version:   3.13.1
+[debug] [2017-10-18T20:32:50.435Z] Platform:      linux
+[debug] [2017-10-18T20:32:50.436Z] Node Version:  v6.11.4
+[debug] [2017-10-18T20:32:50.436Z] Time:          Wed Oct 18 2017 17:32:50 GMT-0300 (BRT)
+[debug] [2017-10-18T20:32:50.436Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on any device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=306560758&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2017-10-18T20:33:00.385Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token { code: '4/l20MUkB93QGSrovzs6TsZQRYBf5luL-wPyaPAJoRERs',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  redirect_uri: 'http://localhost:9005',
+  grant_type: 'authorization_code' } 
+ Wed Oct 18 2017 17:33:00 GMT-0300 (BRT)
