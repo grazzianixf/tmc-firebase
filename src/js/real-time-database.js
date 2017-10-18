@@ -1,28 +1,32 @@
-var usersList = document.getElementById('usersList');
-var nameInput = document.getElementById('nameInput');
-var ageInput = document.getElementById('ageInput');
+var patchesList = document.getElementById('patchesList');
+var descricaoInput = document.getElementById('descricaoInput');
 var addButton = document.getElementById('addButton');
 
 // Ao clicar no botão
 addButton.addEventListener('click', function () {
-    create(nameInput.value, ageInput.value);
+
+    if (usuario) {
+        create(descricaoInput.value);        
+    } else {
+        alert('Não está logado');        
+    }
+    
 });
 
 // Função para criar um registro no Firebase
-function create(name, age) {
+function create(descricao) {
     var data = {
-        name: name,
-        age: age
+        descricao: descricao
     };
 
-    return firebase.database().ref().child('users').push(data);
+    return firebase.database().ref().child('patches').push(data);
 }
 
 firebase.database().ref('patches').on('value', function (snapshot) {
-    usersList.innerHTML = '';
+    patchesList.innerHTML = '';
     snapshot.forEach(function (item) {
         var li = document.createElement('li');
         li.appendChild(document.createTextNode(item.val().descricao));
-        usersList.appendChild(li);
+        patchesList.appendChild(li);
     });
 });
