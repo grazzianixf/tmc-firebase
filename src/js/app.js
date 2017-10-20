@@ -11,9 +11,20 @@
 
   var usuario = null;
 
-  firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-      usuario = user;
-      console.log(usuario);
-    }
-  });
+  function obterUsuarioAssincrono(callBackFunction) {
+    console.log("obterUsuarioAssincrono");
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+          usuario = user;
+          console.log("usuario");
+          console.log(usuario);
+          
+          if (callBackFunction != null) {
+              console.log("chamando callback");
+              callBackFunction(user);
+          }
+        }
+      });
+  }
+
+  obterUsuarioAssincrono();

@@ -12,8 +12,9 @@ var logOutButton = document.getElementById('logOutButton');
 var emailInput = document.getElementById('emailInput');
 var passwordInput = document.getElementById('passwordInput');
 
-// Displays
-var displayName = document.getElementById('displayName');
+// DIVs
+var divLogin = document.getElementById('divLogin');
+var divLogout = document.getElementById('divLogout');
 
 // Criar novo usuário
 createUserButton.addEventListener('click', function () {
@@ -37,7 +38,6 @@ authEmailPassButton.addEventListener('click', function () {
         .signInWithEmailAndPassword(emailInput.value, passwordInput.value)
         .then(function (result) {
             console.log(result);
-            displayName.innerText = 'Bem vindo, ' + emailInput.value;
             alert('Autenticado ' + emailInput.value);
         })
         .catch(function (error) {
@@ -53,8 +53,8 @@ logOutButton.addEventListener('click', function () {
         .auth()
         .signOut()
         .then(function () {
-            displayName.innerText = 'Você não está autenticado';
             alert('Você se deslogou');
+            //obterUsuarioAssincrono(ajustarVisibilidadeFormularioAutenticacao);
         }, function (error) {
             console.error(error);
         });
@@ -67,7 +67,6 @@ authAnonymouslyButton.addEventListener('click', function () {
         .signInAnonymously()
         .then(function (result) {
             console.log(result);
-            displayName.innerText = 'Bem vindo, desconhecido';
             alert('Autenticado Anonimamente');
         })
         .catch(function (error) {
@@ -111,9 +110,25 @@ function signIn(provider) {
         .then(function (result) {
             console.log(result);
             var token = result.credential.accessToken;
-            displayName.innerText = 'Bem vindo, ' + result.user.displayName;
         }).catch(function (error) {
             console.log(error);
             alert('Falha na autenticação');
         });
+}
+
+obterUsuarioAssincrono(ajustarVisibilidadeFormularioAutenticacao);
+
+function ajustarVisibilidadeFormularioAutenticacao(usuario) {
+    console.log("ajustarVisibilidadeFormularioAutenticacao");
+    if (usuario == null) { //Deslogado    
+        console.log("deslogado");
+
+        divLogin.hidden = false;
+        divLogout.hidden = true;
+    } else { //Logado
+        console.log("logado");
+
+        divLogin.hidden = true;
+        divLogout.hidden = false;        
+    }
 }
