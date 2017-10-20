@@ -30,3 +30,7 @@ firebase.database().ref('patches').on('value', function (snapshot) {
         patchesList.appendChild(li);
     });
 });
+
+if (usuario == null) {
+    window.location = 'authentication.html';
+}

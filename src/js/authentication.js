@@ -38,7 +38,7 @@ authEmailPassButton.addEventListener('click', function () {
         .signInWithEmailAndPassword(emailInput.value, passwordInput.value)
         .then(function (result) {
             console.log(result);
-            alert('Autenticado ' + emailInput.value);
+            //alert('Autenticado ' + emailInput.value);
         })
         .catch(function (error) {
             console.error(error.code);
@@ -53,8 +53,8 @@ logOutButton.addEventListener('click', function () {
         .auth()
         .signOut()
         .then(function () {
-            alert('Você se deslogou');
-            //obterUsuarioAssincrono(ajustarVisibilidadeFormularioAutenticacao);
+            //alert('Você se deslogou');
+            ajustarVisibilidadeFormularioAutenticacao(null);
         }, function (error) {
             console.error(error);
         });
@@ -67,7 +67,7 @@ authAnonymouslyButton.addEventListener('click', function () {
         .signInAnonymously()
         .then(function (result) {
             console.log(result);
-            alert('Autenticado Anonimamente');
+            //alert('Autenticado Anonimamente');
         })
         .catch(function (error) {
             console.error(error.code);

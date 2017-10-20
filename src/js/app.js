@@ -10,6 +10,10 @@
   firebase.initializeApp(config);
 
   var usuario = null;
+  console.log("auth");
+  console.log(firebase.auth());
+  console.log("currentUser");
+  console.log(firebase.auth().currentUser());  
 
   function obterUsuarioAssincrono(callBackFunction) {
     console.log("obterUsuarioAssincrono");
@@ -18,6 +22,8 @@
           usuario = user;
           console.log("usuario");
           console.log(usuario);
+          console.log("auth");
+          console.log(firebase.auth());          
           
           if (callBackFunction != null) {
               console.log("chamando callback");
