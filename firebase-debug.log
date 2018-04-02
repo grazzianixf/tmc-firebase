@@ -1,0 +1,13 @@
+[debug] [2018-04-02T20:34:53.315Z] ----------------------------------------------------------------------
+[debug] [2018-04-02T20:34:53.317Z] Command:       /usr/bin/node /usr/bin/firebase deploy --only hosting
+[debug] [2018-04-02T20:34:53.317Z] CLI Version:   3.17.7
+[debug] [2018-04-02T20:34:53.317Z] Platform:      linux
+[debug] [2018-04-02T20:34:53.317Z] Node Version:  v8.10.0
+[debug] [2018-04-02T20:34:53.317Z] Time:          Mon Apr 02 2018 17:34:53 GMT-0300 (-03)
+[debug] [2018-04-02T20:34:53.317Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-02T20:34:53.325Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-02T20:34:53.325Z] > authorizing via signed-in user
+[debug] [2018-04-02T20:34:53.326Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/tmc-firebase-1f3c5  
+  
+ Mon Apr 02 2018 17:34:53 GMT-0300 (-03)
